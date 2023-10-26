@@ -1,0 +1,177 @@
+body {
+  background-color: #1b1b1b;
+}
+
+.menu_nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position: relative;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.menu_nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu_nav img{
+    width: 140px;
+}
+
+.menu_nav li {
+  float: left;
+}
+
+.menu_nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu_nav li a:hover:not(.active) {
+  background-color: #111;
+}
+.menu_nav button{
+    color: white;
+    background-color: orange;
+    padding: 14px 16px;
+    font-weight: bold;
+}
+
+
+.auto_redes {
+  display: flex;
+  flex-direction: column;
+}
+
+.auto_redes img {
+  width: 30px;
+  fill: #fff;
+  margin-bottom: 120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+.auto_titulo {
+    z-index: 10;
+    padding-left: 170px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+.auto_titulo p{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.rectangulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 240px;
+    background-color: orange;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: #ffffff00;
+  cursor: pointer;
+  display: inline-block;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: #717171;
+}
+
+/* The dots/bullets/indicators */
+.navigator {
+  background-color: #ffffff00;
+  position: absolute;
+  bottom: 80px;
+  left: 40%;
+}
+.dot {
+  cursor: pointer;
+  height: 3px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    font-size: 11px;
+  }
+}

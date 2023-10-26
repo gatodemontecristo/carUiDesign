@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automovil</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body>
+
+    <div class="menu_nav">
+        <img src="../imagenes/logo2.png" alt="">
+        <ul>
+            <li><a href="#news">Inicio</a></li>
+            <li><a href="#contact">Autos</a></li>
+            <li><a href="#about">Historia</a></li>
+            <li><a href="#about">Modelos</a></li>
+            <li><a href="#about">Contacto</a></li>
+          </ul>
+          <button>(+51) 921-973-012</button>
+    </div>
+
+
+    <div class="auto_redes">
+        <img src="../imagenes/facebook.svg" alt="">
+        <img src="../imagenes/google-plus-g.svg" alt="">
+        <img src="../imagenes/share-nodes-solid.svg" alt="">
+        <img src="../imagenes/twitter.svg" alt="">
+    </div>
+    <div class="auto_titulo">
+        <p>LUJO</p>
+        <p>ESTILO DE VIDA</p>
+        <p>ALQUILERES</p>
+    </div>
+    <div class="rectangulo">
+
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="../imagenes/carrusel/carro01.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../imagenes/carrusel/carro02.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../imagenes/carrusel/carro03.jpg" style="width:100%">
+        </div>
+        
+       
+        
+        <div class="navigator" style="text-align:center">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+        </div>
+        <br>
+        
+      
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
