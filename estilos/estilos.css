@@ -358,3 +358,97 @@ img {
   background-color: transparent;
   transition-duration: 0.4s;
 }
+
+.servicio .servicio_intro{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+}
+.servicio .servicio_intro  img{
+  width: 60%;
+}
+
+
+.servicio .servicio_intro .servicio_intro_texto .area{
+  width: 80px;
+  height: 270px;
+  background-color: orange;
+  z-index: 5;
+  position: absolute;
+  left: -40px;
+  top: -80px;
+}
+.servicio .servicio_intro .servicio_intro_texto{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.servicio .servicio_intro .servicio_intro_texto p{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  z-index: 10;
+}
+.servicio .servicio_intro .servicio_intro_texto button:hover {
+  background-color: #3333336b;
+  color: rgba(255, 204, 0, 0.527);
+}
+.servicio .servicio_intro .servicio_intro_texto button {
+  z-index: 10;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: orange;
+  padding: 10px 20px;
+  border: none;
+  width: 150px;
+  background-color: transparent;
+  transition-duration: 0.4s;
+  margin-left: 50px;
+}
+
+
+.servicio .servicio_detalle .servicio_detalle_texto{
+  display: flex;
+  flex-direction: column;
+}
+.servicio .servicio_detalle .servicio_detalle_texto .titulo{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  /* margin: 0; */
+}
+.servicio .servicio_detalle .servicio_detalle_texto .detalle{
+  line-height:30px;
+  color: #b3b3b3;
+  font-size: 17px;
+  text-align: left;
+  /* margin-left: 10%; */
+}
+.servicio .servicio_detalle .servicio_detalle_texto{
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+.servicio .servicio_detalle .servicio_detalle_texto p{
+  color: white;
+}
+.servicio .servicio_detalle{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -80px;
+  }
+  .servicio .servicio_detalle  img{
+    width: 50%;
+  }
+  .servicio .servicio_detalle .servicio_detalle_iconos{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  }
