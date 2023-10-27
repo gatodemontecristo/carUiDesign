@@ -1,15 +1,29 @@
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+*{
+  font-family: roboto;
+}
+
 body {
   background-color: #1b1b1b;
 }
-
+.seccion_principal{
+  position: relative;
+  height: 700px;
+}
 .menu_nav{
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items:center;
     position: relative;
     background-color: transparent;
     z-index: 10;
+    padding-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .menu_nav ul {
@@ -25,9 +39,11 @@ body {
 
 .menu_nav li {
   float: left;
+  margin-right: 40px;
 }
 
 .menu_nav li a {
+  font-size: 20px;
   display: block;
   color: white;
   text-align: center;
@@ -43,19 +59,25 @@ body {
     background-color: orange;
     padding: 14px 16px;
     font-weight: bold;
+    border: none;
 }
 
 
 .auto_redes {
+  position: fixed;
+  z-index: 11;
   display: flex;
+  left: 40px;
+  top: 150px;
   flex-direction: column;
+  row-gap: 120px;
 }
 
 .auto_redes img {
   width: 30px;
   fill: #fff;
-  margin-bottom: 120px;
 }
+
 
 * {
   box-sizing: border-box;
@@ -74,14 +96,53 @@ img {
     z-index: 10;
     padding-left: 170px;
     position: absolute;
-    top: 140px;
+    display: flex;
+    flex-direction: column;
+    top: 240px;
     left: 0;
 }
 .auto_titulo p{
-    color: white;
-    font-size: 45px;
-    font-weight: bold;
+  margin: 0;
 }
+.auto_titulo p.subtitulo{
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+   
+}
+.auto_titulo p.marca{
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  
+}
+.auto_titulo p.precio{
+  margin-top: 20px;
+  color: #717171;
+  font-size: 15px;
+}
+.auto_titulo p.precio span{
+  color:orange;
+  font-weight: bold;
+}
+.auto_titulo button:hover {
+  background-color: #3333336b;
+  color: rgba(255, 204, 0, 0.527);
+}
+.auto_titulo button {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  width: 150px;
+  border: 1px solid orange;
+  background-color: transparent;
+  transition-duration: 0.4s;
+}
+
+
 
 .rectangulo{
     position: absolute;
@@ -174,4 +235,126 @@ img {
   .next {
     font-size: 11px;
   }
+}
+
+.banner{
+  margin-top: 120px;
+  position: relative;
+  display: flex;
+      align-items: center;
+      justify-content: center;
+    overflow: hidden;
+}
+.banner img{
+  opacity: 0.1;
+
+}
+.banner p span{
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 9px;
+}
+.banner p{
+  position: absolute;
+  color: #b3b3b3;
+  font-size: 17px;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 30%;
+}
+.banner button:hover {
+  color: rgba(255, 204, 0, 0.527);
+}
+.banner button {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  width: 150px;
+  border: 1px solid orange;
+  background-color: transparent;
+  transition-duration: 0.4s;
+}
+
+.modelos{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+.modelos .letra-fondo{
+  font-size: 350px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  /* white-space: nowrap; */
+  text-align: center;
+  opacity: 0.15;
+}
+.modelos .carta{
+  z-index: 10;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+.modelos .titulo{
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.modelos .subtitulo{
+  font-size: 20px;
+  color: #717171;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 0px;
+}
+.modelos img{
+  width: 350px;
+}
+.modelos .oferta{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.oferta{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.oferta p{
+  color: #717171;
+    font-size: 15px;
+    font-weight: bold;
+}
+.oferta p span{
+  color: orange;
+}
+.oferta button:hover {
+  background-color: #3333336b;
+  color: rgba(255, 204, 0, 0.527);
+}
+.oferta button {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: orange;
+  padding: 10px 20px;
+  border: none;
+  width: 150px;
+  background-color: transparent;
+  transition-duration: 0.4s;
 }
