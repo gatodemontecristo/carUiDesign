@@ -304,7 +304,8 @@ img {
 .modelos .carta{
   z-index: 10;
   margin-top: 50px;
-  margin-right: 20px;
+  margin-right: 40px;
+  width: 400px;
 }
 .modelos .titulo{
   font-size: 20px;
@@ -321,7 +322,7 @@ img {
   margin-top: 0px;
 }
 .modelos img{
-  width: 350px;
+  width: 100%;
 }
 .modelos .oferta{
   display: flex;
@@ -451,4 +452,96 @@ align-items: center;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  }
+  .servicio .servicio_detalle .servicio_detalle_iconos img{
+    width: 30px;
+  }
+  footer{
+    padding-top: 200px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  footer .datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+  }
+  footer .datos img{
+    width: 250px;
+    z-index: 11;
+  }
+  footer .datos .info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    z-index: 11;
+  }
+  footer .datos form{
+    display: flex;
+    flex-direction: row;
+    z-index: 11;
+  }
+  footer .datos form div{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 5px;
+  }
+  footer .datos form div input{
+    height: 50px;
+    background-color: transparent;
+    color: #717171;
+    border: #474747 solid 1px;
+    margin-bottom: 5px;
+  }
+  footer .datos form div textarea{
+    height: 105px;
+    border: #474747 solid 1px;
+    background-color: transparent;
+    color: #717171;
+    margin-bottom: 5px;
+  }
+  footer .datos form div button{
+    text-align: center;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 1px solid orange;
+    background-color: orange;
+    transition-duration: 0.4s;
+    
+  }
+  footer  .privacidad{
+    margin-top: 40px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  }
+  footer  .privacidad p{
+    color: #474747;
+    font-size: 15px;
+    z-index: 11;
+  }
+  footer .letra-fondo{
+    font-size: 350px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0.15;
+    margin: 0;
+    top: 60px;
   }
