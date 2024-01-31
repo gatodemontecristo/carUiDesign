@@ -3,5 +3,8 @@ Pagina web realizado con solo HTML y CSS 	![HTML5](https://img.shields.io/badge/
 
 Arquitectura y Entornos Web Cibertec - Proyecto Renta de Autos
 
-![screencapture-127-0-0-1-5500-paginas-inicio-html-2023-10-28-05_24_08](https://github.com/gatodemontecristo/carUiDesign/assets/61488294/fd908db4-124f-47da-ac13-9a7dbc3c14f3)
+Mockup : https://shots.so/
+
+![770shots_so](https://github.com/gatodemontecristo/carUiDesign/assets/61488294/17a0c5ef-1f4a-41d7-8728-de213d5da312)
+
 
